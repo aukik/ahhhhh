@@ -8,8 +8,6 @@ router.get("/signout", (req, res) => {
       if (err) return console.log(err)
       res.redirect("/")
     })
-  else
-    //gg
-    return res.redirect("/signin")
+  else return res.redirect("/signin")
 })
 module.exports = router
